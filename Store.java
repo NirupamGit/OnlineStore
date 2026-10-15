@@ -32,16 +32,11 @@ public class Store
     profit=0.0;
     items=new ArrayList<>();
   }
-  public void showItems() {
-    if(items.isEmpty()) {
-      System.out.print("No items for sale");
-    }
-    System.out.println(items);
-  }
+
   public void addItem(ItemForSale item) {
     items.add(item);
   }
-  public void sellItem(ItemForSale item) {
+  public void sellItem(String item) {
     for (int i = 0; i<items.size(); i++) {
       if(items.get(i).equals(item)) {
         items.remove(i);
@@ -49,8 +44,18 @@ public class Store
       profit+=items.get(i).getPrice();
     }
 
-    System.out.println(item + "is sold");
+    System.out.println(item + " is sold");
 
+  }
+    public void showItems() {
+    if(items.isEmpty()) {
+      System.out.print("No items for sale");
+    }
+    String itemsAsString = "";
+    for(int i=0; i<items.size(); i++) {
+      itemsAsString+=items.get(i).getName()+", ";
+    }
+    System.out.println(itemsAsString);
   }
   public void getCreatorName(ItemForSale itemName) {
     String name = "";
@@ -61,7 +66,7 @@ public class Store
     }
     System.out.println(name);
   }
-  public double getProfit() {
-      return profit;
+  public void getProfit() {
+    System.out.println("profit is "+profit);
   }
 }

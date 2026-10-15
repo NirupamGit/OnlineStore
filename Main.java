@@ -10,10 +10,14 @@ public class Main
       Book book1=new Book("harry potter", "xyz", 50, "October 10, 2026", author1);
       Author author2=new Author("asdf", "21 April 1978", 50);
       Book book2=new Book("java", "oracle", 70.0, "10th July 2002", author2);
+      Movie movie1=new Movie("terminator", "james cameron", 59, "30th October 2015", "2hrs");
       store.addItem(book1);
       store.addItem(book2);
-      store.showItems();
+      store.sellItem("harry potter");
+      store.getProfit();
       store.getCreatorName(book2);
-      
+      store.addItem(movie1);
+      store.showItems();
+
      }
 }
