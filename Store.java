@@ -21,7 +21,7 @@
 
       Where these variables are stored and how to name them is up to you!
   */
-
+ //this class contains the methods to add, remove, show items, show the profit of the store and get the name of the creator of a product
 import java.util.ArrayList;
 
 public class Store

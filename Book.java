@@ -1,4 +1,4 @@
-
+//This class contains all the required methods to get the title, publisher, and author
 public class Book extends ItemForSale
 {
     String title;

@@ -1,3 +1,4 @@
+//this class contains the constructor and methods to initialize and get info of an item for sale like a book or a movie
 public class ItemForSale
 {
 String name;

@@ -1,4 +1,5 @@
-
+//Nirupam Vadigi
+//This class is used to test the store
 public class Main
 {
    //Your tests go here! I expect you to make sure various parts of your program work. 

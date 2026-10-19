@@ -1,3 +1,4 @@
+//This class has the methods and constructors needed for initializing an author
 public class Author
 {
     private String name;

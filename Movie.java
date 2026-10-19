@@ -1,3 +1,4 @@
+//this class contains the constructor to initialize a movie item and the methods to get the info of the movie
 public class Movie extends ItemForSale
 {
     String title;
